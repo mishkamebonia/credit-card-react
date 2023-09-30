@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import AddCard from "./pages/AddCard";
-import Home from "./pages/Home";
+import AddCard from "./pages/AddCard.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
   useEffect(() => {
