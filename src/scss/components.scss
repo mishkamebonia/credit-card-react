@@ -1,0 +1,24 @@
+@mixin creditCard($bg) {
+  overflow: hidden;
+
+  width: 285px;
+  height: 156.208px;
+  
+  border-radius: 6px;
+  flex-shrink: 0;
+
+  background: $bg;
+  filter: $shadow;
+}
+
+@mixin card-small-text {
+  color: $white;
+  font-family: Space Grotesk;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.286px;
+  text-transform: uppercase;
+  z-index: 10;
+}

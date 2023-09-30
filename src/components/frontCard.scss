@@ -1,0 +1,84 @@
+@import "../scss/colors.scss";
+@import "../scss/components.scss";
+
+.front-card__position {
+  position: absolute;
+  top: 126.4px;
+  left: 17px;
+}
+
+.front-card {
+  @include creditCard($purple-gradient);
+
+  .card-content {
+    position: relative;
+
+    img {
+      position: inherit;
+      display: block;
+      padding: 17.6px 0 37px 19px;
+      z-index: 10;
+      user-select: none;
+    }
+
+    .number {
+      position: inherit;
+      color: $white;
+      font-family: Space Grotesk;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2.2px;
+
+      padding-left: 19px;
+      padding-bottom: 17px;
+      z-index: 10;
+    }
+
+    .row {
+      position: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 239px;
+      margin: 0 auto;
+      
+      @include card-small-text();
+    }
+
+    .blur-effect {
+      position: absolute;
+
+      width: 94.777px;
+      height: 262.627px;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+
+      border-radius: 262.627px;
+      opacity: 0.8474;
+      filter: blur(40px);
+
+      z-index: 1;
+    }
+    .blur-effect__pink {
+      background: $pink;
+
+      top: -81px;
+      left: 150px;
+    }
+    .blur-effect_orange {
+      background: $orange;
+
+      top: -94px;
+      left: 210px;
+    }
+    .blur-effect_blue {
+      background: $blue;
+
+      top: 28px;
+      left: 100px;
+    }
+  }
+}

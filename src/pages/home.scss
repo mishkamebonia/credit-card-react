@@ -1,0 +1,27 @@
+@import "../scss/colors.scss";
+@import "../scss/variables.scss";
+
+.home {
+  min-width: 375px;
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 240px;
+    background: $deep-violet;
+
+    margin-bottom: 91px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    min-width: 327px;
+    margin-bottom: 60px;
+  }
+}
