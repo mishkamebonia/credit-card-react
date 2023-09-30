@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CorrectResult from "./CorrectResult.jsx";
-import CardForm from "./CardForm.jsx";
+import CorrectResult from "./CorrectResult";
+import CardForm from "./CardForm";
 
 function CardCondition({ formData, setFormData, addNewCard }) {
   const [formErrors, setFormErrors] = useState({

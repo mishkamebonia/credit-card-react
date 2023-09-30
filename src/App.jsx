@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import AddCard from "./pages/AddCard.jsx";
-import Home from "./pages/Home.jsx";
+import AddCard from "./pages/AddCard";
+import Home from "./pages/Home";
 
 function App() {
   useEffect(() => {

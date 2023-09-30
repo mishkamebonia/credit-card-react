@@ -1,8 +1,8 @@
 import '../pages/addCard.scss';
 
-import FrontCard from "../components/FrontCard.jsx";
-import BackCard from "../components/BackCard.jsx";
-import CardCondition from "../components/CardCondition.jsx";
+import FrontCard from "../components/FrontCard";
+import BackCard from "../components/BackCard";
+import CardCondition from "../components/CardCondition";
 
 export default function AddCard({formData, setFormData, addNewCard}) {
 
