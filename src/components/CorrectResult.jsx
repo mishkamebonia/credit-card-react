@@ -18,7 +18,7 @@ function CorrectResult({ setFormData }) {
       <img src={correctImage} />
       <h2>thank you!</h2>
       <p>We’ve added your card details</p>
-      <NavLink to="/" onClick={restartFormData} className="button">
+      <NavLink to="/credit-card-react/" onClick={restartFormData} className="button">
         Continue
       </NavLink>
     </div>

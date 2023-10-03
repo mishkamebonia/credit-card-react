@@ -35,9 +35,9 @@ function App() {
     <BrowserRouter>
       <main>
         <Routes>
-          <Route index element={<Home cards={cards} />} />
+          <Route path="credit-card-react" element={<Home cards={cards} />} />
           <Route
-            path="add-new-card"
+            path="credit-card-react/add-new-card"
             element={
               <AddCard
                 formData={formData}
