@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import cardCircleImage from '../assets/card-cyrcles.svg'
+import cardCircleImage from "../assets/card-cyrcles.svg";
 import "../pages/home.scss";
 
 export default function Home({ cards }) {
@@ -13,22 +13,28 @@ export default function Home({ cards }) {
       </nav>
       <main>
         {cards.map((card, index) => (
-          <div key={index}>
+          <div className="full-card" key={index}>
             <div className="front-card">
               <div className="card-content">
                 <img src={cardCircleImage} />
-                <p className="number">
-                  {card.number}
-                </p>
+                <p className="number">{card.number}</p>
                 <div className="row">
-                  <p className="user-name">
-                    {card.holder}
+                  <p className="user-name">{card.holder}</p>
+                  <p className="validation-time">
+                    {card.month} / {card.year}
                   </p>
-                  <p className="validation-time">{card.month} / {card.year}</p>
                 </div>
                 <div className="blur-effect blur-effect__pink"></div>
                 <div className="blur-effect blur-effect_orange"></div>
                 <div className="blur-effect blur-effect_blue"></div>
+              </div>
+            </div>
+            <div className="back-card">
+              <div className="card-content">
+                <div className="line"></div>
+                <div className="cvc-number">
+                  {card.cvc}
+                </div>
               </div>
             </div>
           </div>

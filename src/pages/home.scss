@@ -19,9 +19,45 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 65px;
 
     min-width: 327px;
     margin-bottom: 60px;
+  }
+
+  .full-card {
+    position: relative;
+
+    width: 285px;
+    height: 156.208px;
+
+    cursor: pointer;
+    
+    &:hover {
+      .front-card {
+        transition: all $cardTransition;
+        transform: translate(-30px, 30px);
+      }
+      .back-card {
+        transition: all $cardTransition;
+        transform: translate(30px, -30px);
+      }
+    }
+    
+    .front-card,
+    .back-card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all $cardTransition;
+    }
+
+    .front-card {
+      z-index: 10;
+    }
+
+    .back-card {
+      z-index: 1;
+    }
   }
 }
