@@ -4,6 +4,7 @@ import CardForm from "./CardForm";
 
 function CardCondition({ formData, setFormData, addNewCard }) {
   const [formErrors, setFormErrors] = useState({
+    id: "",
     holder: "",
     number: "",
     month: "",
