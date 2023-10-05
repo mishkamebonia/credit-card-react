@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import AddCard from "./pages/AddCard";
 import Home from "./pages/Home";
-import UpdateCard from "./pages/UpdateCard";
+import AboutCard from "./pages/AboutCard";
 
 function App() {
   useEffect(() => {
@@ -48,7 +48,7 @@ function App() {
               />
             }
           />
-          <Route path="credit-card-react/card/:id" element={<UpdateCard />} />
+          <Route path="credit-card-react/card/:id" element={<AboutCard cards={cards} setCards={setCards} />} />
         </Routes>
       </main>
     </BrowserRouter>
