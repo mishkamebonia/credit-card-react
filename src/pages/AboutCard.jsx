@@ -1,8 +1,11 @@
-import UpdateForm from "../components/UpdateForm"
+import UpdateCard from "../components/UpdateCard";
+import RemoveCard from "../components/RemoveCard";
 
-export default function AboutCard({cards, setCards}) {
-
+export default function AboutCard({ cards, setCards }) {
   return (
-    <UpdateForm cards={cards} setCards={setCards} />
-  )
+    <main>
+      <UpdateCard cards={cards} setCards={setCards} />
+      <RemoveCard cards={cards} setCards={setCards} />
+    </main>
+  );
 }
