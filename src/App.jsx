@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import AddCard from "./pages/AddCard";
 import Home from "./pages/Home";
+import UpdateCard from "./pages/UpdateCard";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
   const [cards, setCards] = useState([]);
 
   const [formData, setFormData] = useState({
+    id: "",
     holder: "",
     number: "",
     month: "",
@@ -46,6 +48,7 @@ function App() {
               />
             }
           />
+          <Route path="credit-card-react/card/:id" element={<UpdateCard />} />
         </Routes>
       </main>
     </BrowserRouter>
