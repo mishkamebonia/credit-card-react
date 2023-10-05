@@ -33,6 +33,27 @@ $cardTransition: 1s;
   }
 }
 
+.button-remove {
+  display: block;
+  margin: 0 auto;
+
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: $red;
+
+  text-decoration: underline;
+  cursor: pointer;
+
+  transition: $transition;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}
+
 .hoverable-button {
   color: $white;
   font-size: 18px;
