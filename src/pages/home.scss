@@ -25,39 +25,44 @@
     margin-bottom: 60px;
   }
 
-  .full-card {
-    position: relative;
-
-    width: 285px;
-    height: 156.208px;
-
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
     cursor: pointer;
-    
-    &:hover {
-      .front-card {
-        transition: all $cardTransition;
-        transform: translate(-30px, 30px);
-      }
-      .back-card {
-        transition: all $cardTransition;
-        transform: translate(30px, -30px);
-      }
-    }
-    
-    .front-card,
-    .back-card {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all $cardTransition;
-    }
+  }
+}
 
+.full-card {
+  position: relative;
+
+  width: 285px;
+  height: 156.208px;
+  
+  &:hover {
     .front-card {
-      z-index: 10;
+      transition: all $cardTransition;
+      transform: translate(-30px, 30px);
     }
-
     .back-card {
-      z-index: 1;
+      transition: all $cardTransition;
+      transform: translate(30px, -30px);
     }
+  }
+  
+  .front-card,
+  .back-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all $cardTransition;
+  }
+
+  .front-card {
+    z-index: 10;
+  }
+
+  .back-card {
+    z-index: 1;
   }
 }
