@@ -5,6 +5,7 @@ import "./correctResult.scss";
 function CorrectResult({ setFormData }) {
   function restartFormData() {
     setFormData({
+      id: "",
       holder: "",
       number: "",
       month: "",
