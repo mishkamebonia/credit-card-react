@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./aboutcard.scss";
-// import UpdateCard from "../components/UpdateCard";
 
 export default function AboutCard({ cards, setCards }) {
   const { id } = useParams();
@@ -85,6 +84,7 @@ export default function AboutCard({ cards, setCards }) {
   }
 
   function handleDelete(e) {
+    const confirmDelete = window.confirm("Are you sure you want to delete this credit card?");
     const cardIndex = cards.findIndex((card) => card.id === id);
 
     if (cardIndex === -1) {
@@ -92,14 +92,16 @@ export default function AboutCard({ cards, setCards }) {
       return;
     }
 
-    const updatedCards = [...cards];
-    updatedCards.splice(cardIndex, 1);
-
-    setCards(updatedCards);
-
-    localStorage.setItem("cards", JSON.stringify(updatedCards));
-
-    navigate("/credit-card-react/");
+    if (confirmDelete) {
+      const updatedCards = [...cards];
+      updatedCards.splice(cardIndex, 1);
+  
+      setCards(updatedCards);
+  
+      localStorage.setItem("cards", JSON.stringify(updatedCards));
+  
+      navigate("/credit-card-react/");
+    }
   }
 
   return (
