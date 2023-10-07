@@ -1,4 +1,18 @@
+@import "../scss/colors.scss";
+
 .about-card {
-  width: 375px;
-  margin: 60px auto;
+  min-width: 375px;
+  
+  .description {
+    background: $deep-violet;
+    padding: 60px 0;
+    margin-bottom: 60px;
+    
+    .container {
+      width: 327px;
+      margin: 0 auto;
+      font-size: 12px;
+      color: $white;
+    }
+  }
 }
