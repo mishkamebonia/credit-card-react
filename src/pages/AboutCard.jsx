@@ -104,6 +104,15 @@ export default function AboutCard({ cards, setCards }) {
 
   return (
     <main className="about-card">
+      <div className="description">
+        <div className="container">
+          You have the option to update or delete your credit card information.
+          To make changes, simply update the necessary details and click
+          'Update.' If you wish to remove a credit card from your account,
+          select 'Remove credit card.' Please note that deleting a card is
+          irreversible, and you won't be able to use it for future transactions.
+        </div>
+      </div>
       <form onSubmit={handleUpdate}>
         <div className="card-form">
           <p>cardholder name</p>
