@@ -48,7 +48,15 @@ function App() {
               />
             }
           />
-          <Route path="credit-card-react/card/:id" element={<AboutCard cards={cards} setCards={setCards} />} />
+          <Route
+            path="credit-card-react/card/:id"
+            element={
+              <AboutCard
+                cards={cards}
+                setCards={setCards}
+              />
+            }
+          />
         </Routes>
       </main>
     </BrowserRouter>
