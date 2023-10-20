@@ -3,7 +3,7 @@
 
 .home {
   min-width: 375px;
-  
+
   nav {
     display: flex;
     justify-content: center;
@@ -38,7 +38,7 @@
 
   width: 285px;
   height: 156.208px;
-  
+
   &:hover {
     .front-card {
       transition: all $cardTransition;
@@ -49,7 +49,7 @@
       transform: translate(30px, -30px);
     }
   }
-  
+
   .front-card,
   .back-card {
     position: absolute;
